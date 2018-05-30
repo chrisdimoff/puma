@@ -55,7 +55,7 @@ DEF_MAX_LENGTH(REQUEST_URI, 1024 * 100);
 DEF_MAX_LENGTH(FRAGMENT, 1024); /* Don't know if this length is specified somewhere or not */
 DEF_MAX_LENGTH(REQUEST_PATH, (2048 * 10));
 DEF_MAX_LENGTH(QUERY_STRING, (1024 * 100));
-DEF_MAX_LENGTH(HEADER, (1024 * (80 + 32)));
+DEF_MAX_LENGTH(HEADER, (10240 * (80 + 32)));
 
 struct common_field {
 	const size_t len;
